@@ -1,0 +1,216 @@
+/*-------------------- css --------------------*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    background-image: url("../wp_template/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+.mv_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mv_area img {
+    width: 150px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: red;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.about {
+  padding: 80px 0;
+}
+.about-inner {
+  display: flex;            
+  flex-direction: row;     
+  gap: 40px;                
+  align-items: center;      
+}
+
+.about-img,
+.about-text {
+  flex: 1;                  
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-text {
+  text-align: left;        
+}
+
+
+.about-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-text h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-text .btn {
+  display: inline-block;
+  background-color: #1e7ea1;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #1e7ea1;
+}
+
+.introduce-text{
+  text-align: center; 
+}
+
+.btn {
+  display: inline-block;
+  background-color: #24779A;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #16627c;
+}
+
+.services{
+    padding: 50px;
+    background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 1px;
+  background: #ccc;
+}
+
+.section-title::before {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.section-title::after {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 30px;
+  justify-content: center;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 15px);
+  gap: 20px;
+}
+
+.service-img img {
+  width: 150px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.service-text h3 {
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.service-text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 350px;
+}
+
+/* Đổi thứ tự cho item 2 để đảo ảnh-text */
+.service-item:nth-child(even) {
+  flex-direction: row-reverse;
+}

@@ -1,0 +1,47 @@
+/*-------------------- mobile --------------------*/
+@media screen and (max-width: 768px) {
+    .mv_area{
+        img{
+            width:100px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+  .about-inner {
+    flex-direction: column; /* xuống hàng dọc */
+    text-align: center;     /* text căn giữa */
+  }
+
+  .about-img,
+  .about-text {
+    flex: 1 1 100%;
+  }
+
+  .about-text .btn {
+    margin: 0 auto;         /* nút căn giữa */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .service-item {
+    width: 100%;
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .service-text p,
+  .service-text h3 {
+    max-width: 100%;
+  }
+
+  .service-img img {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
