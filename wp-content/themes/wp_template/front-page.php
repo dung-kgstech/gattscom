@@ -69,56 +69,30 @@
 	</div>
 </section>
 
-<div class="container">
-	<div class="column-list">
-		<div class="column blog">
-			<h2>BLOG</h2>
+<section class="news">
+	<div class="container">
+		<h2 class="news-title">NEWS</h2>
 
-			<div class="item">
-				<div class="date">2022年1月25日</div>
-				<div class="tags">
-					<span>Laravel</span><span>Docker</span><span>MYSQL</span><span>SSH</span>
-				</div>
-				<p>Dockerで構築するLaravel開発環境（前編）</p>
-			</div>
+		<ul class="news-list">
+			<li class="news-item">
+				<span class="news-date">2025年12月8日</span>
+				<span class="news-text">年末年始休業のお知らせ</span>
+			</li>
+			<li class="news-item">
+				<span class="news-date">2024年8月2日</span>
+				<span class="news-text">2024年 夏季休業のお知らせ</span>
+			</li>
+			<li class="news-item">
+				<span class="news-date">2022年1月1日</span>
+				<span class="news-text">新年明けましておめでとうございます。</span>
+			</li>
+		</ul>
 
-			<div class="item">
-				<div class="date">2022年11月8日</div>
-				<div class="tags">
-					<span>MAC</span><span>OS</span><span>Update</span><span>SSH</span>
-				</div>
-				<p>macOS Venturaへのアップデートに伴うSSH接続エラーについて</p>
-			</div>
-
-			<div class="item">
-				<div class="date">2022年1月23日</div>
-				<div class="tags">
-					<span>Laravel</span><span>Composer</span><span>NPM</span><span>SSL</span>
-				</div>
-				<p>CentOS Stream9 LAMP構築から色々含めて</p>
-			</div>
-		</div>
-
-		<div class="column news">
-			<h2>NEWS</h2>
-
-			<div class="item">
-				<div class="date">2025年12月8日</div>
-				<p>年末年始休業のお知らせ</p>
-			</div>
-
-			<div class="item">
-				<div class="date">2024年8月2日</div>
-				<p>2024年 夏季休業のお知らせ</p>
-			</div>
-
-			<div class="item">
-				<div class="date">2022年1月1日</div>
-				<p>新年明けましておめでとうございます。</p>
-			</div>
+		<div class="news-button">
+			<a href="#">詳しくはこちら</a>
 		</div>
 	</div>
-</div>
+</section>
 
 
 
