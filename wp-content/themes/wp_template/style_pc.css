@@ -233,7 +233,7 @@ body {
 .news-title::after {
   content: "";
   display: block;
-  width: 100px; 
+  width: 300px; 
   height: 1px;
   background-color: #333;
   margin: 15px auto 0;
@@ -286,70 +286,215 @@ body {
   opacity: 0.8;
 }
 
-.footer {
-  background: #fff;
-  border-top: 1px solid #ddd;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
 
-.footer-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
 
-/* Follow Us */
-.footer-follow h4 {
-  margin-bottom: 10px;
-}
 
-.social-icons a {
-  display: block;
-  color: #000;
-  text-decoration: none;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
 
-/* Center */
-.footer-center {
+.blog {
+  padding: 60px 0;
+  background-color: #fff;
+  font-family: sans-serif;
   text-align: center;
 }
 
-.logo {
-  color: red;
+/* Tiêu đề BLOG */
+.blog-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.blog-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background-color: #ccc;
+}
+
+/* Container Slider */
+.blog-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Danh sách Card */
+.blog-list {
+  display: flex;
+  gap: 30px;
+}
+
+.blog-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Đổ bóng mờ nhẹ */
+  text-align: left;
+  max-width: 320px;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-item-title {
+  font-size: 16px;
+  font-weight: bold;
   margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.blog-description {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.blog-link {
+  color: #2a7a9c;
+  text-decoration: none;
+  font-size: 13px;
+  border-bottom: 1px solid #2a7a9c;
+}
+
+/* Nút mũi tên */
+.arrow {
+  background: none;
+  border: 2px solid #5a3c2c;
+  color: #5a3c2c;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Phân trang (Dots) */
+.blog-dots {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #2a7a9c;
+}.footer {
+  padding: 60px 0 20px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  font-family: sans-serif;
+  color: #000;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+/* Cột 1: Follow Us */
+.footer-heading-serif {
+  font-family: "Playfair Display", serif; /* Hoặc font có chân tương tự */
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  gap: 15px;
+}
+
+.social-item img {
+  width: 40px; /* Kích thước icon SNS */
+  height: 40px;
+}
+
+/* Cột 2: Logo và Menu */
+.footer-logo {
+  color: #e60012; /* Màu đỏ của logo */
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-menu {
   list-style: none;
   padding: 0;
-}
-
-.footer-menu li {
-  margin: 6px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-menu a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  font-size: 18px;
 }
 
-/* Contact */
-.footer-contact {
-  line-height: 1.6;
+/* Cột 3: Thông tin liên hệ */
+.footer-info {
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 600px;
 }
 
-/* Bottom */
+.address-info {
+  margin: 20px 0;
+}
+
+.tel {
+  font-weight: 500;
+}
+
+/* Phần bản quyền dưới cùng */
 .footer-bottom {
+  margin-top: 50px;
+  border-top: 1px solid #000;
+  padding-top: 20px;
   text-align: center;
-  padding: 15px 0;
-  border-top: 1px solid #ddd;
   font-size: 12px;
-  color: #555;
 }

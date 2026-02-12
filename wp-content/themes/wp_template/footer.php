@@ -1,18 +1,26 @@
 <footer class="footer">
+    <div class="footer-column footer-nav">
+        <div class="footer-logo">GattsCOM</div>
+    </div>
     <div class="footer-container">
 
-        <!-- Left: Follow Us -->
-        <div class="footer-follow">
-            <h4>Follow Us</h4>
-            <div class="social-icons">
-                <a href="#" class="facebook">FACEBOOK</a>
-                <a href="#" class="instagram">INSTAGRAM</a>
+
+        <div class="footer-column follow-us">
+            <h2 class="footer-heading-serif">Follow Us</h2>
+            <div class="social-links">
+                <a href="#" class="social-item">
+                    <img src="path/to/facebook-icon.png" alt="Facebook">
+                    <span>FACEBOOK</span>
+                </a>
+                <a href="#" class="social-item">
+                    <img src="path/to/instagram-icon.png" alt="Instagram">
+                    <span>INTAGRAM</span>
+                </a>
             </div>
         </div>
 
-        <!-- Center: Logo & Menu -->
-        <div class="footer-center">
-            <h2 class="logo">GattsCOM</h2>
+
+        <div class="footer-column footer-nav">
             <ul class="footer-menu">
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">SERVICES</a></li>
@@ -21,21 +29,19 @@
             </ul>
         </div>
 
-        <!-- Right: Contact -->
-        <div class="footer-contact">
-            <p>開発のご相談・お問い合わせなど、<br>お気軽にお問い合わせください。</p>
-            <p>
-                住所：<br>
-                ホーチミン市トゥードゥック区、<br>
-                ヴァンファン通り、4番地 29号
-            </p>
-            <p>TEL：0123-456-7890</p>
+        <div class="footer-column footer-info">
+            <p>開発のご相談・お見積りなど、お気軽にお問い合わせください。</p>
+            <div class="address-info">
+                <p>住所：</p>
+                <p>ホーチミン市トゥードゥック市、</p>
+                <p>ヴァンフック都市区、4番通り29号</p>
+            </div>
+            <p class="tel">TEL : 0123-456-7890</p>
         </div>
-
     </div>
 
     <div class="footer-bottom">
-        Copyright ©GattsCOM All right reserved
+        <p>Copyright GattsCOM All right reserved</p>
     </div>
 </footer>
 
